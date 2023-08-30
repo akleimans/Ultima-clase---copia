@@ -1,0 +1,142 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  /* Estilos para la barra de navegación */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #ffd700; /* Cambia el color al pasar el mouse por encima */
+}
+  
+  /* Header styles */
+  .hero {
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+  }
+  
+  /* Button styles */
+  .btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  /* Menu section styles */
+  .menu {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .menu-item {
+    margin-bottom: 30px;
+  }
+  
+  .menu-item img {
+    width: 400px; /* Ancho fijo */
+    height: auto; /* Altura ajustada automáticamente */
+    border-radius: 5px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .social-links {
+    margin-bottom: 20px;
+  }
+  
+  .social-icon {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 50px 0;
+    }
+  
+    .menu {
+      padding: 30px;
+    }
+  }
+  
+  /* Estilos de la imagen y el popup */
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+#popup-image {
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos del formulario */
+form {
+  text-align: left;
+}
+
+form h2 {
+  margin-bottom: 10px;
+}
+
+form label,
+form input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form button {
+  margin-top: 10px;
+}
